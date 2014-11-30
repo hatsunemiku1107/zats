@@ -1,0 +1,49 @@
+<!DOCUTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<base href="http://localhost/k/">
+		<link rel="stylesheet" href="css.css">
+		<link rel="text/javascript" href="js.js">
+		<title>雑談掲示板(現在2スレッド</title>
+	</head>
+	<body>
+		<h2 id="title">雑談掲示板(現在2スレッド</h2>
+		<div>
+			<dl>	<tr>
+		<dt>
+			<td>1 </td><td><a href="./2">テスト</a></td><td>  レス数:</td><td>1</td>
+		</dt>
+	</tr>
+	<tr>
+		<dt>
+			<td>2 </td><td><a href="./3">test</a></td><td>  レス数:</td><td>2</td>
+		</dt>
+	</tr>
+			</dl>		</div>
+		<div>
+			<form action="post.php" method="post">
+				<select name="TID">
+					<option value="2">テスト</option>
+					<option value="3">test</option>
+				</select><br>
+				NAME:<input name="NAME" type="text"><br>
+				E-mail:<input name="EMAIL" type="e-mail"><br>
+				Text:<input name="TEXT" type="text" value=""><br>
+				<input type="submit" value="送信"><input type="reset" value="リセット">
+			</form>
+			
+			<form action="makethread.php" method="post">
+				TITLE:<input name="TITLE" type="text"><br>
+				NAME:<input name="NAME" type="text"><br>
+				E-mail:<input name="EMAIL" type="e-mail"><br>
+				Text:<input name="TEXT" type="text" value=""><br>
+				<input type="submit" value="送信"><input type="reset" value="リセット">
+			</form>
+		</div>
+		<footer>
+			<hr>
+			雑談掲示板
+		</footer>
+	</body>
+</html>
